@@ -1,0 +1,57 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s ease-in-out; /* Task 1 */
+  }
+  
+  /* Task 1: Smooth Hover Transition for Links */
+  nav a:hover {
+    color: #0077ff;
+  }
+  
+  /* Task 2: Animated Button on Click */
+  .animated-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Smooth scaling */
+  }
+  
+  .animated-button:active {
+    transform: scale(1.1); /* Increases size slightly when clicked */
+  }
+  
+  /* Task 3: Continuous Rotation Animation for an Icon */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating-icon img {
+    animation: rotate 5s linear infinite; /* Continuous rotation */
+    margin-top: 20px;
+  }
+  
